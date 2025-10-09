@@ -1,0 +1,30 @@
+{
+  "name": "gnosis-geth.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "upstream": [
+    {
+      "repo": "gnosischain/go-ethereum",
+      "version": "v1.16.3-gc.2",
+      "arg": "UPSTREAM_VERSION"
+    },
+    {
+      "repo": "dappnode/staker-package-scripts",
+      "version": "v0.1.2",
+      "arg": "STAKER_SCRIPTS_VERSION"
+    }
+  ],
+  "description": "geth-gnosis.public.dappnode.eth description",
+  "type": "service",
+  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "architectures": ["linux/amd64", "linux/arm64"],
+  "categories": ["Blockchain"],
+  "keywords": ["geth", "go-ethereum", "ethereum", "client", "execution"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dappnode/DAppNodePackage-geth-gnosis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dappnode/DAppNodePackage-geth-gnosis/issues"
+  },
+  "license": "GPL-3.0"
+}

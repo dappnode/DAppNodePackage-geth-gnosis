@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  geth:
+    build:
+      context: geth
+      args:
+        UPSTREAM_VERSION: v1.16.3-gc.2
+        STAKER_SCRIPTS_VERSION: v0.1.2
+        P2P_PORT: 35417
+        DATA_DIR: /gnosis
+    volumes:
+      - gnosis:/gnosis
+    environment:
+      EXTRA_OPTS: ""
+      SYNCMODE: snap
+    restart: unless-stopped
+    ports:
+      - 35417:35417/tcp
+      - 35417:35417/udp
+    image: geth.gnosis-geth.dnp.dappnode.eth:0.1.0
+volumes:
+  gnosis: {}
