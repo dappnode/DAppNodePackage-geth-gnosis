@@ -13,7 +13,7 @@
       "arg": "STAKER_SCRIPTS_VERSION"
     }
   ],
-  "description": "geth-gnosis.public.dappnode.eth description",
+  "description": "geth-gnosis.dnp.dappnode.eth description",
   "type": "service",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "architectures": ["linux/amd64"],
