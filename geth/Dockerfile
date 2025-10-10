@@ -22,7 +22,8 @@ ENV GETH_HTTP=true \
     DATA_DIR=${DATA_DIR} \
     P2P_PORT=${P2P_PORT} \
     JWT_PATH=/jwtsecret.hex \
-    STAKER_SCRIPTS_URL=https://github.com/dappnode/staker-package-scripts/releases/download/${STAKER_SCRIPTS_VERSION}
+    STAKER_SCRIPTS_URL=https://github.com/dappnode/staker-package-scripts/releases/download/${STAKER_SCRIPTS_VERSION} \
+    NETWORK=gnosis
 ADD ${STAKER_SCRIPTS_URL}/execution_tools.sh /etc/profile.d/
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
