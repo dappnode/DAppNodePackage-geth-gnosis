@@ -1,13 +1,13 @@
 {
   "name": "gnosis-geth.dnp.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "requirements": {
     "minimumDappnodeVersion": "0.3.11"
   },
   "upstream": [
     {
       "repo": "gnosischain/go-ethereum",
-      "version": "v1.16.3-gc.2",
+      "version": "v1.16.7-gc.9",
       "arg": "UPSTREAM_VERSION"
     },
     {
