@@ -4,7 +4,7 @@ services:
     build:
       context: geth
       args:
-        UPSTREAM_VERSION: v1.17.1-gc.3
+        UPSTREAM_VERSION: v1.17.4-gc
         STAKER_SCRIPTS_VERSION: v0.1.2
         P2P_PORT: 35417
         DATA_DIR: /gnosis
